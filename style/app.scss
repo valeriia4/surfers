@@ -738,6 +738,7 @@ li.active > a{
   }
   &-form{
     border-bottom: 1px solid #4d4d4d;
+    position: relative;
     p{
       font-size: 1rem;
       font-family: $mainFont;
@@ -769,6 +770,7 @@ li.active > a{
 .ba-form-error {
   color: red;
   display: none;
+  position: absolute;
 }
 //media queries
 
