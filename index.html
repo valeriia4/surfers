@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Surfers</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/app.css">
+    <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="ba-header" style="background-image: none; position: relative;">
+
+       <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute;"  version="1.1" class="svg-filters" width="275" height="183" viewBox="0 0 220 220">
+        <defs>
+          <filter id="filter">
+            <feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="2" result="turbulence" />
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="10" in="SourceGraphic" in2="turbulence" />
+        </filter>
+    </defs>
+</svg>
+<div id="imgWrapper">
+    <img class="test" src="img/bg.png"/>
+</div>
+
+<div class="container ba-header__container" style="position: relative;">
+    <a href="#" class="ba-logo">Surfers Co.</a>
+
+    <nav id="main-nav">
+        <label for="menu-input" class="menu-btn" role="button">
+          <span class="menu-btn__line"></span>
+          <span class="menu-btn__line"></span>
+          <span class="menu-btn__line"></span>
+      </label>
+      <input type="checkbox" hidden id="menu-input">
+      
+      <ul class="menu">
+        <li class="menu__item"><a href="#board">Boards</a></li>
+        <li class="menu__item"><a href="#about">About Us</a></li>
+        <li class="menu__item"><a href="#team">Our team</a></li>
+        <li class="menu__item"><a href="#posts">Posts</a></li>
+        <li class="menu__item"><a href="#map">Contact us</a></li>
+        <li class="menu__item"><a href="#dealer">Dealers</a></li>
+    </ul>
+    
+</nav>
+<div class="social">
+    <ul>
+        <li class="social__item">
+           <a href="https://www.facebook.com/surfersfromparis/" target="_blank">
+            <svg width="37" height="37">
+                <use xlink:href="#facebook"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="social__item">
+        <a href="https://www.instagram.com/surfer_magazine/" target="_blank">
+            <svg width="37" height="37">
+                <use xlink:href="#instagram"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="social__item">
+        <a href="#" target="_blank">
+            <svg width="37" height="37">
+                <use xlink:href="#mail"></use>
+            </svg>
+        </a>
+    </li>
+</ul>
+</div>
+</div>
+<div class="container ba-header-info">
+    <p class="ba-header-info__title">Ride every wave as if it's you</p>
+    <p class="ba-header-info__subtitle">We love the motion of the ocean</p>
+    <div class="slider-main" id="board">
+        <div class="slider-main-content">
+            <div class="boards">
+                <div class="boards-wrapper" id="yak1">
+                    <div class="slider-boards">
+                        <img src="img/Boardbig.png" alt="">
+                        <img src="img/boardtr.png" alt="">
+                        <img src="img/board-next.png" alt="">
+                        <img src="img/Boardbig.png" alt="">
+                    </div>
+                    <div class="slider-boards-nav">
+                        <img src="img/miniboard.png" alt="">
+                        <img src="img/miniboard2.png" alt="">
+                        <img src="img/mini3.png" alt="">
+                        <img src="img/mini4.png" alt="">
+                    </div>
+                </div>
+                <div class="boards-info">
+                    <p class="boards-info__model">JR Surfboards The Donny Stoker Yellow/Green Rail Fade</p>
+                    <div class="boards-info-rating">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/Star 5.png" alt="">
+                        <span class="boards-info-rating__value">(52)</span>
+                    </div>
+                    <div class="container">
+
+                        <div class="tabs">
+
+                          <ul class="tabs__caption">
+                            <li class="active">
+                                <a href="#">Description</a>
+                            </li>
+                            <li>
+                                <a href="#">Features</a>
+                            </li>
+                            <li>
+                                <a href="#">Dimensions</a>
+                            </li>
+                        </ul>
+
+                        <div class="tabs__content  active">
+                            <p class="content__info">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+                            <div class="content-buy">
+                                <p class="content-buy__price">$499.99</p>
+                                <button class="content-buy__btn" onclick="show('block')">Buy now</button>
+                            </div>
+                            <a href="#" class="content__link">View all boards</a>
+                        </div>
+
+                        <div class="tabs__content">
+                            <p class="content__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est odit exercitationem, nostrum veritatis animi nobis porro iusto dolore eveniet beatae corrupti, temporibus, officia debitis quas odio. Asperiores maxime, nulla! Vero?</p>
+                            <p class="content__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est odit exercitationem, nostrum veritatis animi nobis porro iusto dolore eveniet beatae corrupti, temporibus, officia debitis quas odio. Asperiores maxime, nulla! Vero?</p>
+                        </div>
+
+                        <div class="tabs__content">
+                            <p class="content__info">Longboards</p>
+                            <ul>
+                                <li>Classic longboards</li>
+                                <li>Modern longboards</li>
+                                <li>The 2 + 1</li>
+                                <li>The Malibu</li>
+                                <li>Olo</li>
+                                <li>Alaia</li>
+                                <li>Tandem</li>
+                            </ul>
+                            <p class="content__info">Shortboards</p>
+                            <ul>
+                                <li>Hybrid</li>
+                                <li>Fish</li>
+                                <li>Funboard</li>
+                                <li>Gun</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-main-content">
+        <div class="boards">
+            <div class="boards-wrapper">
+                <div class="slider-boards">
+                    <img src="img/boardtr.png" alt="">
+                    <img src="img/board-next.png" alt="">
+                    <img src="img/Boardbig.png" alt="">
+                    <img src="img/board-next.png" alt="">
+                </div>
+                <div class="slider-boards-nav">
+                    <img src="img/mini3.png" alt="">
+                    <img src="img/mini4.png" alt="">
+                    <img src="img/miniboard.png" alt="">
+                    <img src="img/miniboard2.png" alt="">
+                </div>
+            </div>
+            <div class="boards-info">
+                <p class="boards-info__model">JR Surfboards The Donny Stoker Yellow/Green Rail Fade</p>
+                <div class="boards-info-rating">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/Star 5.png" alt="">
+                    <span class="boards-info-rating__value">(52)</span>
+                </div>
+                <div class="tabs-container">
+                    <div class="tabs">
+
+                      <ul class="tabs__caption">
+                        <li class="active">
+                            <a href="#">Description</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Dimensions</a>
+                        </li>
+                    </ul>
+
+                    <div class="tabs__content  active">
+                        <p class="content__info">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+                        <div class="content-buy">
+                            <p class="content-buy__price">$499.99</p>
+                            <button onclick="showNext('block')" class="content-buy__btn">Buy now</button>
+                        </div>
+                        <a href="#" class="content__link">View all boards</a>
+                    </div>
+
+                    <div class="tabs__content">
+                        <p class="content__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est odit exercitationem, nostrum veritatis animi nobis porro iusto dolore eveniet beatae corrupti, temporibus, officia debitis quas odio. Asperiores maxime, nulla! Vero?</p>
+                        <p class="content__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est odit exercitationem, nostrum veritatis animi nobis porro iusto dolore eveniet beatae corrupti, temporibus, officia debitis quas odio. Asperiores maxime, nulla! Vero?</p>
+                    </div>
+
+                    <div class="tabs__content">
+                        <p class="content__info">Longboards</p>
+                        <ul>
+                            <li>Classic longboards</li>
+                            <li>Modern longboards</li>
+                            <li>The 2 + 1</li>
+                            <li>The Malibu</li>
+                            <li>Olo</li>
+                            <li>Alaia</li>
+                            <li>Tandem</li>
+                        </ul>
+                        <p class="content__info">Shortboards</p>
+                        <ul>
+                            <li>Hybrid</li>
+                            <li>Fish</li>
+                            <li>Funboard</li>
+                            <li>Gun</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div id="modal">  
+    <div class="window">
+        <p class="window__title">Your product successfully added to the cart!</p>
+        <p class="boards-info__model">JR Surfboards The Donny Stoker Yellow/Green Rail Fade</p>
+        <img src="img/miniboard.png" alt="mini-item">
+        <button onclick="show('none')" class="window__btn">Go to shop cart</button>
+    </div>
+</div>
+<div id="modal-next">  
+    <div class="window">
+        <p class="window__title">Your product successfully added to the cart!</p>
+        <p class="boards-info__model">JR Surfboards The Donny Stoker Yellow/Green Rail Fade</p>
+        <img src="img/board-two.png" alt="mini-item">
+        <button onclick="showNext('none')" class="window__btn">Go to shop cart</button>
+    </div>
+</div>
+</header>
+
+<main>
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="container__title">About us</h2>
+        </div>
+        <div class="about-container">
+            <div class="about-info">
+                <p class="about__title">We are Surfers co.</p>
+                <p class="about__text">Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit. Fusce iaculis feugiat arcunum fermentum hendrerit. Suspendisse auctor labor nisi, et interdum diam facilisis, aliquam pulvinar semi egetis belle sollicitudin ut. Nullam tincidun finibustus scelerisque.</p>
+                <a href="#" class="about__link">Read more</a>
+            </div>
+            <div class="about-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/euv0uzIzeWw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="our-team" id="team">
+            <div class="container">
+                <h2 class="container__title">Our team</h2>
+            </div>
+            <div class="container team-slider">
+                <div class="team-slider-item--big">
+                    <div class="team-slider-item">
+                        <div class="team-slider-item__info">
+                            <img src="img/icon1.png" alt="wave" class="team-slider__img">
+                            <p class="team-slider__name">Taj Burrow</p>
+                            <p class="team-slider__email">@tajamos</p>
+                            <p class="team-slider__geo">Yallingup, Australia</p>
+                        </div>
+                    </div>
+                    <div class="team-slider-item">
+                        <div class="team-slider-item__info">
+                            <img src="img/icon2.png" alt="girl" class="team-slider__img">
+                            <p class="team-slider__name">Malia Manuel</p>
+                            <p class="team-slider__email">@maliamanuel</p>
+                            <p class="team-slider__geo">Wailua, Hi</p>
+                        </div>
+                    </div>
+                    <div class="team-slider-item">
+                        <div class="team-slider-item__info">
+                            <img src="img/icon3.png" alt="man" class="team-slider__img">
+                            <p class="team-slider__name">Ian Walsh</p>
+                            <p class="team-slider__email">@ian.walsh</p>
+                            <p class="team-slider__geo">Maui, Hi</p>
+                        </div>
+                    </div>
+                    <div class="team-slider-item">
+                        <div class="team-slider-item__info">
+                            <img src="img/icon4.png" alt="girl" class="team-slider__img">
+                            <p class="team-slider__name">Marcy Callaghan</p>
+                            <p class="team-slider__email">@marcyjancallaghan</p>
+                            <p class="team-slider__geo">San Clemente, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-slider-item--big">
+                    <div class="team-slider-item">
+                        <div class="team-slider-item__info">
+                            <img src="img/icon1.png" alt="wave" class="team-slider__img">
+                            <p class="team-slider__name">Taj Burrow</p>
+                            <p class="team-slider__email">@tajamos</p>
+                            <p class="team-slider__geo">Yallingup, Australia</p>
+                        </div>
+                    </div>
+                    <div class="team-slider-item">
+                        <div class="team-slider-item__info">
+                            <img src="img/icon2.png" alt="girl" class="team-slider__img">
+                            <p class="team-slider__name">Malia Manuel</p>
+                            <p class="team-slider__email">@maliamanuel</p>
+                            <p class="team-slider__geo">Wailua, Hi</p>
+                        </div>
+                    </div>
+                    <div class="team-slider-item">
+                       <div class="team-slider-item__info">
+                        <img src="img/icon4.png" alt="girl" class="team-slider__img" align="middle">
+                        <p class="team-slider__name">Marcy Callaghan</p>
+                        <p class="team-slider__email">@marcyjancallaghan</p>
+                        <p class="team-slider__geo">San Clemente, CA</p>
+                    </div>
+                </div>
+                <div class="team-slider-item">
+                 <div class="team-slider-item__info">
+                    <img src="img/icon3.png" alt="man" class="team-slider__img">
+                    <p class="team-slider__name">Ian Walsh</p>
+                    <p class="team-slider__email">@ian.walsh</p>
+                    <p class="team-slider__geo">Maui, Hi</p>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+</section>
+
+<section class="updates" id="posts">
+    <div class="container updates-container">
+        <h3 class="updates__title">Latest updates</h3>
+        <div class="updates-posts" id="updates-posts">
+            <div class="updates-posts-item">
+                <img src="img/updates1.png" alt="girls on beach">
+                <p class="updates-posts__title"><a href="#">Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships</a></p>
+            </div>
+            <div class="updates-posts-item">
+                <img src="img/updates2.png" alt="bluewave">
+                <p class="updates-posts__title"><a href="#">A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind</a></p>
+            </div>
+            <div class="updates-posts-item">
+                <img src="img/updates3.png" alt="nature of beach">
+                <p class="updates-posts__title"><a href="#">Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments</a></p>
+            </div>
+        </div>
+        
+        <button class="updates__btn" id="get-btn">View all posts</button>
+    </div>
+</section>
+
+<section class="map" id="map">
+
+</section>
+
+</main>
+
+<footer class="ba-footer" id="dealer">
+    <div class="container ba-footer__container">
+        <p class="ba-footer__title">&#169;2017 Surfers Co.<span>Design by @lucaalco</span></p>
+        <div class="ba-footer-wrapper">
+            <ul class="ba-footer-list">
+                <li class="ba-footer-list__item"><a href="#about">About</a></li>
+                <li class="ba-footer-list__item"><a href="#board">Boards</a></li>
+                <li class="ba-footer-list__item"><a href="#">Accessories</a></li>
+                <li class="ba-footer-list__item"><a href="#posts">Blog</a></li>
+                <li class="ba-footer-list__item"><a href="#">Technology</a></li>
+                <li class="ba-footer-list__item"><a href="#team">Team</a></li>
+                <li class="ba-footer-list__item"><a href="#">Dealers</a></li>
+                <li class="ba-footer-list__item"><a href="#map">Contact us</a></li>
+            </ul>
+            <form action="" class="ba-footer-form" >
+                <p>Subscribe to our newsletter</p>
+                <input type="email" placeholder="Your e-mail" id="#contact-email">
+                <span class="ba-form-error">not valid email</span>
+                <button type="submit" class="ba-form-submit"></button>
+            </form>
+        </div>
+    </div>
+
+</footer>
+
+
+<div class="visually-hidden">
+    <svg width="0" height="0" style="position:absolute">
+
+       <symbol id="facebook"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+          <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="Logo" width="36" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjCAEIOR23WV/zAAABrElEQVRIx62WPUvDUBSGn95Eax3qx2AcxKFDFR0UdBSrUVBw92/o4NguIrT/oj/DxS9cXBQVFLQ6OahZTFtsi1C5LglSzb1N27xnSODePJxz8nLPjREsgwxrLJJmhCGggkuJS04445uQGiPPG1IRb+QZaw/pJ0tNCfGjRo5+HSbNdVuIH9dMqTAZ3NAYicQlE4SxQ5T0N+rYfzFTlDvGSCTl1gLj3HSFkUhuiP+Csl1jJJKsj7G66E5rpywQwA6DakdMcMgXn7xwodqSYBfA1LhYGvJe+iqpc3rHNFlmXJ3PPDMAvOLwpN5msWqyprN6wntucIdW64IFQqjabsOcwQHDqtUCm8x6uS/RR0kNMqGibnWr9nQWqAiSYUoDeNYtJtFZLSW3vWy2ZEoO6G2pKw255IEm27m7InDDlqbVh+AhEtCj4CoS0K3gOBLQkeAcp2eMw6mgSbFnUJEmgEW994PNAGrE/k+DDrTPof8a2eEf2TgCsGl0jGkEtySikQ0wzW0HvZnW/YE4uRBmqJNrbXGwLPI4SohDAev/RzEFzGAFm0XSjJIEqnzor34/7WJ16KvCZ7gAAAAASUVORK5CYII="/>
+      </symbol>
+
+      <symbol id="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/>
+        </rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="Logo1" width="36" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjCAEIOzjOa+k2AAACKElEQVRIx62WP2gTURzHP5c7G3WIKNIb3dJuChYcU66KcyFTF0EcpCCKS0Fypbicg5MIXQqSxalQ26WbiotIlaadtMM1QyENSNMcJF1Sfg71Yu/uvcsf8/st7353fN77fd/v994ZqM2kwAxT5LnKFaBJgz2+85HPnNKnjeNRQzRew2O8N2SMEi0tJPQWLmNpmDzbPSGhbzOhwxRo9I0RhAYFFcbpI6W4t3HimAmOB8YIwnE0wSyVoTCCUCH7D1QaGiMIpRBjD6FOVCkbMsBTLsfLegGfQOE+C5hxfS/xDMBKVrErgcL3ZVd25bcsJtd0iAVOcrG+EvRIEOSr+Kr07mWYSZbUdWW9Xkx7e9fidu8GDCv2gnYSbhpUuRGPBufGq5SBBxTPxXJJUBWayYwD+SCzMi+BlLuxsgQyL7PyXgKVRs2MCg8+axwAK93ICnDAGnvq1HKZdF2yipHaMhFBIrZFh7nu0xwdtvScwKKhTg5qLPMEeIfwkCLL1PSgI4ufyV0LbRGDxxSBDm9x0zL7ZfGD+7q3p7zgDXeAbxz+jRnqT3eULbIv69peX5eqskUsvlDHjuLLPGeDChKb1uAW07xOrqfOJwAvzrdkSdO4viyJmVyPd8azaf//wWYCLYzkbTCAvWQzHI7s8B/ZdQTgcDIw5kQtyYiubIBJdgbQZjJtB7K4fRRDG7fnuQLYeNS1kDqv4p1wVvVqM5nGYYo818gBAUfpv35/AODNznvk0CadAAAAAElFTkSuQmCC"/>
+    </symbol>
+
+    <symbol id="mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <rdf:Description rdf:about=""/>
+        </rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata>
+        <image id="Icon" width="36" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjCAEJAA9Lpsk2AAACWElEQVRIx62WvWtTYRSHnyTX1Bap1EJj7eTQJDhYwYqKQySp4FD8B7pVEUqH2sEvSEAESUdBCDj1L7AiUnRo1cGppLQFB6uigtU2i2mKSUHT/Bxs2tyvfJlzlveey33uOb973vdcD87mI0KMQYJ0cRjIkeUDaV7xhh3qtB6SrCMXXydJT22Inzh5V0jZ8yTwV8MEWaoJKfsSITdMhGzdGCGyRJww0TpKsnqBqBUTYrNhjBCb5gLbWG4KI8QybfugeNMYIeJlTKAJdcxKBcAAJuiorLOfzhrNtsXHyst2bnAXDHMXj6keGzPntIEBUXOiYS3UxCzohLW8S15i5rRHmGSKkmtZJZLcYsQaHvJy2hzp5iXzDLHmiPlGjLfM0mW9MeAlbI0dYpZuBpixYZ5wimM8NX+bckOTM1ebkiQVdV3omvJ7uvzSVaFx7UiSUlaNcli7IrX7YEm3hUJalCSlFRRK7GFtIBluonowgFXO84AdEvwBAlW7K+ec0bx86tC4jH/v0z31ya+0W0Y5+OoEyqhX/VqR9EwH1a7nkn7ogo4r6wz64uW9PUkxylnSnASu8InPDAO9vOYyo8iprlUvi/boIyLM7O24Po7urg6QYpjHTqAVL/PW2BpnuInHRdJRzvHdHp4Dg43KaidVqmPTTtg2rUGRae7sox8yV33SAL95Zw5MUwQIUPj/g80H5PHYp0EDdp8X5WXLDv+WjSOAKNsNY7adJWnRyAYIs9KANmGqWBuJOpqhQMIssbMFSJJxhWSYcjqY3LaUj4tEGSTIETqBLX5W//X7C73aRmlxr5ZvAAAAAElFTkSuQmCC"/>
+    </symbol>
+
+    <symbol id="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="6" viewBox="0 0 31 6">
+      <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description rdf:about=""/>
+    </rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="Waves" width="31" height="6" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAGAgMAAABGGa35AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAIv8AIv8AAADPArxOAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjCAITICPv/gg/AAAALklEQVQI12NgZBAAIwZWhxAwYhANDAWhAIaQUFcQCmEIEGUEIREGBhYGByBiAADG/weydzeQSgAAAABJRU5ErkJggg=="/>
+</symbol>
+
+<symbol id="wavesblack" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="6" viewBox="0 0 31 6">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about=""/></rdf:RDF></x:xmpmeta><?xpacket end="w"?></metadata><image id="Waves" width="31" height="6" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAGCAQAAACRfo3hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjCAMUMxyFhBVwAAAAUElEQVQY032QQQ4AQQQEu72VV3ns7MGQ2V2mE1ESdYAKAMACkXmxF1vDsoWohm2l0LHMIq5idGoMLHFkp/1Y9hLq3g/nvd4yFUeaB/rwtMgD4FAyWmLaFJQAAAAASUVORK5CYII="/>
+</symbol>
+</svg>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script src='scripts/slick.min.js'></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/modal.js"></script>
+
+</body>
+</html>
