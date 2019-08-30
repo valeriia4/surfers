@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../revealator/fm.revealator.jquery.min.css">
 </head>
 <body>
     <header class="ba-header" style="background-image: none; position: relative;">
@@ -266,12 +267,12 @@
             <h2 class="container__title">About us</h2>
         </div>
         <div class="about-container">
-            <div class="about-info">
+            <div class="about-info revealator-fade revealator-duration5 revealator-once revealator-below">
                 <p class="about__title">We are Surfers co.</p>
                 <p class="about__text">Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit. Fusce iaculis feugiat arcunum fermentum hendrerit. Suspendisse auctor labor nisi, et interdum diam facilisis, aliquam pulvinar semi egetis belle sollicitudin ut. Nullam tincidun finibustus scelerisque.</p>
                 <a href="#" class="about__link">Read more</a>
             </div>
-            <div class="about-video">
+            <div class="about-video revealator-zoomin revealator-once revealator-below">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/euv0uzIzeWw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
@@ -406,7 +407,6 @@
 
 </footer>
 
-
 <div class="visually-hidden">
     <svg width="0" height="0" style="position:absolute">
 
@@ -448,6 +448,8 @@
 <script src='scripts/slick.min.js'></script>
 <script src="scripts/app.js"></script>
 <script src="scripts/modal.js"></script>
+<script src="../revealator/jquery-1.11.3.min.js"></script>
+<script src="../revealator/fm.revealator.jquery.min.js"></script>
 
 </body>
 </html>
